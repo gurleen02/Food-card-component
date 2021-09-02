@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*GLOBALS */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        font-size: 1.6rem;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        margin: auto;
+         background: rgb(231, 231, 231);
+    }
+
+    /*Containers */
+
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        height: 58vh;
+        width: 380px;
+        margin: 10em 4em auto;
+        background: #FCF8E8;
+        align-items: center;
+        text-align: left;
+        border-radius: 12px;
+        padding: 8rem 2rem 0;
+        filter: drop-shadow(5px 10px 9px rgba(0, 0, 0, .1));
+    }
+
+    /*Components */
+    .card__data *{
+       margin-bottom: 1.5rem; 
+    }
+
+    .card__img {
+        position: absolute;
+        width: 260px;
+        top: -2.5rem;
+        left: 20%;
+        margin: auto;
+        transform: translateX(-7%) translateY(-30%);
+        filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, .3));
+    }
+
+    .card__title {
+        font-size: 3rem;
+        margin-top: 27%;
+        font-weight: bold;
+    }
+
+    .card__btn {
+        padding: 0.8em 1.8em;
+        margin-top: 2rem;
+        display: block;
+        width: 180px;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        border-radius: .5rem;
+        border: 1px solid #064420;
+        background: #064420;
+        transition: color .3s ease-in-out;
+        transition-property: color,background;
+    }
+
+    .card__btn:hover{
+  	color: #064420;
+		background: #FCF8E8;
+    
+  }
+  
+
+</style>
+
+<body>
+
+    <div class="card">
+        <img src="5-2-burger-png.png" alt="" class="card__img">
+        <div class="card__data">
+            <div class="card__title">
+                Chicken Burger
+            </div>
+            <div class="card__price">
+                $15.99
+            </div>
+            <p class="card__decription">
+                Lorem ipsum dolor sit amet.
+            </p>
+            <a href="#" class="card__btn"> Order Now</a>
+        </div>
+    </div>
+</body>
+
+</html>
